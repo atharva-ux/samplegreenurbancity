@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #FFFDFA;
+    /* background-image: url('./img/GreenCity1.jpg');
+    
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    background-size: cover;
+    color: #FFFFFF; */
+}
+button{
+    font-family: "Raleway", sans-serif;
+}
+
+header{
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+.logo, .nav-links, .information{
+    display: flex;
+}
+.logo-image{
+    font-family: "Lora";
+    font-weight: 400;
+    margin: 5px;
+    padding-top: 2px;
+}
+.logo{
+    flex: 1;
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link{
+    color: #5f5f79;
+    font-size: 18px;
+    text-decoration: none;
+}
+nav{
+    flex: 2;
+}
+.information{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.presentation{
+    text-align: center;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+
+}
+.introduction{
+    flex: 1;
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494964, #6f6f89 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+}
+.cta{
+    text-align: center; 
+    padding: 50px 0px 0px 0px;
+}
+a.nounderline{
+    text-decoration: none;
+}
+.cta-select{
+    border: 2px solid #55E6C1;
+    background: transparent;
+    color: #55E6C1;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+.cta-select:hover{
+    color: #FFFFFF;
+
+}
+.cta-select::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #55E6C1;
+    z-index: -1;
+    transition: 0.5s;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.cta-select:hover::before{
+    height: 180%;
+}
+.cover{
+    flex: 1;
+}
+.cover img{
+    height: 60vh;
+    padding-left: 10%;
+}
+/* span.green{
+    color: #45ed53;
+    background: none;
+} */
+
+#features{
+    width: 100%;
+    padding: 100px 0;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    font-family: "Lora", sans-serif;
+    display: inline-block;
+}
+
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587, #FFFFFF);
+    position: absolute;
+    top: -20px;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.title-text h3{
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.features{
+    flex-basis: 50%;
+
+}
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.features-img img{
+    margin-top: 10%;
+    width: 70%;
+    border-radius: 10px;
+}
+.features h3{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #009688;
+}
+
+.features-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.feature-icon{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #009688;
+}
+.feature-text p{
+    padding: 0 20px;
+    text-align: initial;
+}
+
